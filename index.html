@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <title>world clock</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock </title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <h1>World Clock</h1>
-        <select name="" id="">
-            <option value="">Select a city..</option>
-            <option value="">Los Angeles</option>
-            <option value="">Sydney</option>  
-            <option value="">Paris</option> 
-        </select>
-        <div class="city">
-        <h2>Los Angeles</h2>
-        <div class="date">August 15th 2022 </div>
-        <div class="time">1:48:15<small>AM</small> </div>
+      <h1>World Clock</h1>
+
+      <select id="city-name">
+        <option value="">Select a city...</option>
+        <option value="current">My current location</option>
+        <option value="America/Toronto">Toronto</option>
+        <option value="Europe/London">London</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Asia/Gaza">Gaza</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="cape-town">
+          <div>
+            <h2>Cape Town</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
 
-        <div class="city">
-        <h2>Sydney</h2>
-        <div class="date">August 15th 2022 </div>
-        <div class="time">1:48:15<small>AM</small> </div>
+        <div class="city" id="mexico-city">
+          <div>
+            <h2>Mexico City</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
+
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+
+      <footer>
+        This project was coded by <strong>Panashe</strong> and is<a
+          href="https://github.com/wendy204/world-clock"
+          target="_blank"
+        >
+          sourced on Github </a
+        >.
+      </footer>
     </div>
-    <br>
-    <footer>
-        This project was coded by <strong>Panashe</strong> and is open sourced on <a href="https://github.com/wendy204/world-clock">Github</a>
-    </footer>
-</body>
-
-</html>
+    <script src="src/script.js"></script>
+  </body>
